@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>One Page Wonder - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/one-page-wonder.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+
+
+  <header class="masthead text-center text-white">
+    <div class="masthead-content">
+      <div class="container">
+        <h1 class="masthead-heading mb-0">Cloud Storage</h1>
+        <h2 class="masthead-subheading mb-0">Servicio de Almacenamiento</h2>
+        <a href="https://firebase.google.com/docs/storage/?hl=es-419" class="btn btn-primary btn-xl rounded-pill mt-5">Leer mas</a>
+      </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="img/02.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <h2 class="display-4">OBJETIVO</h2>
+            <p>Se creó para facilitar el almacenamiento y la publicación de contenido que el usuario genera.
+              Servicio de almacenamiento de objetos potente, simple y rentable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="img/01.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5">
+            <h2 class="display-4">¿CÓMO FUNCIONA?</h2>
+            <p>Cloud Storage permite subir y descargar archivos directamente de los clientes.
+Cloud Storage almacena tus archivos en un depósito de Google Cloud Storage y los hace accesibles a través de Firebase y Google Cloud.
+Se escala automáticamente, lo que significa que no es necesario migrar a ningún otro proveedor
+.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="img/04.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <h2 class="display-4">FUNCIONES CLAVES
+</h2>
+            <p>Operaciones robustas:  Los SDK de Firebase para Cloud Storage realizan las operaciones de carga y descarga sin importar la calidad de la red.
+Seguridad sólida: Los SDK de Firebase para Cloud Storage se integran con Firebase Authentication a fin de brindar autenticación intuitiva y sencilla para los programadores.
+Gran escalabilidad: Está diseñado para escalar a exabytes si tu app se vuelve viral.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="img/03.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5">
+            <h2 class="display-4">¿CÓMO SE IMPLEMENTA?</h2>
+            <p>1. Integra los SDK de Firebase para Cloud Storage. <br/>
+            2. Crea una referencia. <br/>
+3. Sube o descarga. <br/>
+4. Protege tus archivos. <br/>
+.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5">
+            <h3 >1. Integrar los SDK de Firebase para Cloud Storage
+</h2>
+            <p>implementation 'com.google.firebase:firebase-storage:16.1.0'
+</p>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <h3 >2. Crea una referencia
+</h2>
+            <p>Para que la app pueda tener acceso a los archivos es necesario crear una referencia de estos. Estas referencias se pueden usar para subir o descargar datos, obtener o actualizar metadatos, o borrar el archivo. Una referencia puede apuntar a un archivo específico o a un nodo de nivel superior de la jerarquía.
+Las referencias se crean con la instancia singleton FirebaseStorage y con su método getReference().
+Puedes crear una referencia a una ubicación de un nivel más bajo en el árbol, como 'images/space.jpg' mediante el método getChild() en una referencia existente.
+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5">
+            <h3 >3. Subida
+</h2>
+            <p>Cuando tengas una referencia, puedes descargar archivos desde Cloud Storage con una llamada a getBytes() o a getStream(). Si prefieres descargar el archivo con otra biblioteca, puedes obtener una URL de descarga con getDownloadUrl().
+</p>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <h3 >4. Protección de archivos
+</h2>
+            <p>Cloud Storage te facilita la tarea de autorizarlos y validar sus solicitudes.<br>
+Autenticación.<br>
+Autorización.<br>
+Validación de datos.<br>
+
+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-5 bg-black">
+    <div class="container">
+      <p class="m-0 text-center text-white small">Copyright &copy; Futher Mockers Expo 1 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
